@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://i.pinimg.com/564x/f2/1c/a0/f21ca08eb10a4c7fae69c0af8c12d8d9.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.checkout-container {
+    width: 400px;
+    margin: 50px auto;
+    background-color: rgb(94, 202, 232);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+    color: #333;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+}
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.expiration {
+    display: flex;
+    justify-content: space-between;
+}
+.expiration input {
+    width: 48%;
+}
+.btn-submit {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.btn-submit:hover {
+    background-color: #45a049;
+}
+.order-summary {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.security {
+    text-align: center;
+    margin-top: 15px;
+}
+.security img {
+    width: 50px;
+}

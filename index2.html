@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Checkout</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+<div class="checkout-container">
+    <h2>Secure Payment Checkout</h2>
+
+    <div class="order-summary">
+        <p><strong>Order Total:</strong> $49.99</p>
+        <p><strong>Shipping:</strong> $5.00</p>
+        <p><strong>Taxes:</strong> $3.50</p>
+        <hr>
+        <p><strong>Total: $58.49</strong></p>
+    </div>
+
+    <form action="payment-process.php" method="post">
+        <!-- Cardholder Name -->
+        <label for="cardholder-name">Cardholder Name</label>
+        <input type="text" id="cardholder-name" name="cardholder-name" placeholder="Shivaay" required>
+
+        <!-- Card Number -->
+        <label for="card-number">Card Number</label>
+        <input type="text" id="card-number" name="card-number" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" required>
+
+        <!-- Expiration Date -->
+        <div class="expiration">
+            <div>
+                <label for="exp-month">Expiration Month (MM)</label>
+                <input type="text" id="exp-month" name="exp-month" placeholder="MM" maxlength="2" required>
+            </div>
+            <div>
+                <label for="exp-year">Expiration Year (YY)</label>
+                <input type="text" id="exp-year" name="exp-year" placeholder="YY" maxlength="2" required>
+            </div>
+        </div>
+
+        <!-- CVV -->
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" name="cvv" placeholder="XXX" maxlength="3" required>
+
+        <!-- Billing ZIP Code -->
+        <label for="zip">Billing ZIP/Postal Code</label>
+        <input type="text" id="zip" name="zip" placeholder="XXXXX" maxlength="5" required>
+
+        <!-- Save Payment Information (Optional) -->
+        <label>
+            <input type="checkbox" name="save-info"> Save this card for future purchases
+        </label>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn-submit">Complete Payment</button>
+    </form>
+
+    <div class="security">
+        <p>Your payment is secure and encrypted</p>
+        <img src="https://img.icons8.com/color/48/000000/ssl.png" alt="SSL Secure">
+        <img src="https://img.icons8.com/color/48/000000/pci-dss.png" alt="PCI DSS Compliant">
+    </div>
+</div>
+
+</body>
+</html>
